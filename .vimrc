@@ -1,5 +1,4 @@
 set number
-set syntax
 set autoindent
 set tabstop=4
 set shiftwidth=4
@@ -52,6 +51,8 @@ noremap o o<esc>i
 noremap O O<esc>
 noremap Y y$
 noremap <f5> :w <CR>:!clear <CR>:!python % <CR>
+noremap <s-j> ddp
+noremap <s-k> ddkkp
 noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
 noremap <c-h> <c-w>h
@@ -61,7 +62,8 @@ noremap <c-down> <c-w>-
 noremap <c-left> <c-w>>
 noremap <c-right> <c-w><
 command Q exit
-noremap <F3> :NERDTreeToggle<cr>
+noremap <s-tab> :NERDTreeToggle<cr>
+
 let NERDTreeIgnore=['\.git$', '\.jpg$', '\.mp4$']
 noremap <c-t> :vnew
 let g:airline_theme="base16_gruvbox_dark_hard"
