@@ -1,0 +1,117 @@
+configuration {
+	font:							"Iosevka 12";
+    show-icons:                     true;
+	icon-theme: 					"elementary+";
+    display-drun: 					"";
+    drun-display-format:            "{name}";
+    disable-history:                false;
+    fullscreen:                     false;
+	hide-scrollbar: 				true;
+	sidebar-mode: 					false;
+}
+
+@import "colors.rasi"
+
+window {
+    transparency:                   "real";
+    background-color:               @bg;
+    text-color:                     @bg;
+	border:							1px;
+	border-color:					@color8;
+    border-radius:                  0px;
+	width:							700px;
+    location:                       0;
+}
+
+prompt {
+    enabled: 						true;
+	padding: 						0px 17px 5px 15px;
+	background-color: 				@color3;
+	text-color: 					@bg;
+	font:							"Iosevka 24";
+}
+
+entry {
+    background-color:               @bg;
+    text-color:                     @fg;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "Search...";
+    placeholder-color:              @fg;
+    padding:                        10px 10px 10px 10px;
+    margin:                         0px 0px 0px 0px;
+    border:                         0;
+    border-color:                   @bg1;
+    border-radius:                  0px;
+    blink:                          true;
+}
+
+inputbar {
+	children: 						[ prompt, entry ];
+    background-color:               @bg;
+    text-color:                     #FFFFFF;
+    expand:                         false;
+	border:							0px 0px 1px;
+    border-color:                   @color3;
+    border-radius:                  0px;
+    spacing:                        0px;
+}
+
+listview {
+    text-color:                     @fg;
+    background-color:               @bg;
+    padding:                        0px;
+    columns:                        5;
+    lines:                          3;
+    spacing:                        0px;
+    cycle:                          true;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @bg;
+	border:							0px;
+    border-radius:                  0px;
+	border-color:					#000000;
+    children:                       [ inputbar, listview ];
+    spacing:                       	0px;
+    padding:                        0px;
+}
+
+element {
+    background-color:               @bg;
+    text-color:                     @fg;
+    orientation:                    vertical;
+    border-radius:                  0px;
+    padding:                        30px 15px;
+    spacing:                        15px;
+}
+
+element-text {
+    background-color:               #00000000;
+    text-color:                     @fg;
+}
+
+element-icon {
+    size:                           48px;
+    horizontal-align:               0.5;
+    vertical-align:                 0.2;
+    border:                         0px;
+    background-color:               #00000000;
+}
+
+element-text {
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         0px 2.5px 0px 2.5px;
+}
+
+element selected {
+    background-color:               @bg-alt;
+    text-color:                     #ffffff;
+	border:							0px;
+    border-radius:                  0px;
+    border-color:                  	@fg;
+}

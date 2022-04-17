@@ -1,4 +1,4 @@
-theme_gruvbox 'dark' 'hard'
+# theme_gruvbox 'dark' 'hard'
 # content has to be in .config/fish/config.fish
 # if it does not exist, create the file
 setenv SSH_ENV $HOME/.ssh/environment

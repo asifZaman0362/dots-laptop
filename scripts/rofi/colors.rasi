@@ -1,0 +1,24 @@
+* {
+    bg:         #1c010dff;
+    fg:         #ffffffff;
+    color0:     #1c010dff;
+    color8:     #6d6d6dff;
+    color7:     #dddfceff;
+    color15:    #edefdeff;
+    color6:     #ddaa57ff;
+    color14:    #edb76255;
+    color5:     #d8a55455;
+    color13:    #dea85655;
+    color4:     #b28851ff;
+    color12:    #bb945355;
+    color2:     #976a41ff;
+    color10:    #976a4155;
+    color11:    #7c826cff;
+    color3:     #7c826cff;
+    color1:     #747663ff;
+    color9:     #747663ff;
+    bg-sel:     @color14;
+    bg-alt:     @color8;
+    bg-pmt:     @color6;
+    ac:         @color6;
+}
